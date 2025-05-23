@@ -1,0 +1,580 @@
+@media only screen and (min-width: 1282) {
+    header {
+        height: 70px;
+    }
+
+    nav {
+        height: 70px;
+        margin-right: 40px;
+        gap: 1.5rem;
+    }
+
+    .logo {
+        margin-left: 40px;
+        margin-right: 3rem;
+    }
+
+    .nav-list {
+        margin-right: 40px;
+        gap: 1.5rem;
+    }
+
+    .nav-list a {
+        font-size: 18px;
+        padding: 0 1rem;
+    }
+
+    .btn {
+        padding: 1rem;
+    }
+
+    .sub-menu {
+        width: 18rem;
+        top: 6rem;
+    }
+
+    .sub-menu li {
+        line-height: 3rem;
+    }
+
+    .nav-list li {
+        line-height: 6rem;
+    }
+}
+
+
+@media  only screen and (max-width: 1281px) and (min-width: 767px){
+
+    .nav-list {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        flex-direction: column;
+        background-color: #191919;
+        z-index: 1000;
+        align-items: initial;
+        display: none;
+        overflow-y: scroll ;
+        width: 100%;
+    }
+
+    .logo {
+        margin-left: 40px;
+        margin-right: 3rem;
+    }
+
+    .nav-list > li {
+        line-height: 3rem;
+    }
+
+    .sub-menu {
+        position: initial;
+        border: 3px solid transparent;
+        margin-left: 1rem;
+        max-height: 0;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        margin-right: 0.4rem;
+        padding-right: 1rem;
+    }
+
+    .sub-menu .sub-menu {
+        border: none;
+        overflow: hidden;
+        margin-right: 0.4rem;
+    }
+
+    .sub-menu::before {
+        display: none;
+    }
+
+    .nav-list li:hover > .sub-menu {
+        opacity: 1;
+        visibility: visible;
+        max-height: initial;
+    }
+
+    li.move-right {
+        margin: 0 auto 0 0;
+        line-height: initial;
+    }
+
+    .menu-icons {
+        display: block;
+    }
+
+    .fa-times {
+        display: none;
+    }
+
+    nav.active .fa-times {
+        display: block;
+    }
+
+    nav.active .fa-bars {
+        display: none;
+    }
+    
+    nav.active .nav-list {
+        display: flex;
+    }
+
+    /* hero section */
+
+    .hero-content{
+        bottom: 7%;
+    }
+
+    .hero-content h1{
+        font-size: var(--normal-font-size);
+    }
+
+    /* global commuity */
+
+    .global-community {
+        width: 90%;
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+
+    .global-community-img {
+        padding-left: 20px; 
+        width: 50%;
+    }
+
+    .global-community-img img {
+        max-width: 450px; 
+        width: 100%;
+        height: auto;
+    }
+
+    .global-community-content {
+        width: 500px;
+        margin-top: 30px;
+    }
+
+    .global-community-content h1 {
+        font-size: 44px; 
+        padding-bottom: 32px;
+    }
+
+    .global-community-content span {
+        font-size: 44px;
+    }
+
+    .global-community-icon img {
+        max-width: 45px; 
+        padding-right: 15px;
+    }
+
+    /* Student testimonial */
+
+    .wrapper {
+        max-width: 90%; 
+        height: auto;
+        padding: 60px 40px; 
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+    }
+
+    .testimonial-container {
+        padding-left: 40px;
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .testimonial-image img {
+        max-width: 220px;
+    }
+
+    .testimonial-content {
+        max-width: 90%;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .testimonial-text {
+        padding-left: 0;
+        font-size: 18px;
+        line-height: 130%;
+    }
+
+    .testimonial-content h3,
+    .testimonial-content h6 {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .quotation-mark1, .quotation-mark2 {
+        font-size: 90px;
+    }
+
+    .quotation-mark1 {
+        top: 260px;
+        left: 8%;
+        transform: translateX(0%) rotate(180deg);
+    }
+
+    .quotation-mark2 {
+        bottom: 80px;
+        right: 8%;
+    }
+
+    .wrapper button {
+        width: 70px;
+        height: 70px;
+        font-size: 24px;
+    }
+
+    button#prev {
+        left: -30px;
+    }
+
+    button#next {
+        right: -30px;
+    }
+
+    /* see and here from our student */
+
+    .video-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+
+
+    /*student-testimonial-cta*/
+
+    .student-testimonial-cta-card{
+        flex-direction: column-reverse;
+    }
+
+    .cta-content{
+        width: 90%;
+    }
+
+    /* footer */
+    footer .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .container img{
+        width: 50%;
+    }
+
+    footer .footer-content{
+        width: 100%;
+    }
+
+    footer .footer-content p{
+        align-self: center;
+        
+    }
+}
+
+@media only screen and (max-width: 766px) {
+
+    /* Prevent horizontal scrolling */
+    body, html {
+        overflow-x: hidden;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        flex-direction: column;
+        background-color: #191919;
+        z-index: 1000;
+        align-items: initial;
+        display: none;
+        overflow-y: scroll;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .logo {
+        margin-left: 20px;
+        margin-right: 3rem;
+    }
+
+    .nav-list > li {
+        line-height: 3rem;
+    }
+
+    .sub-menu {
+        position: initial;
+        border: 3px solid transparent;
+        margin-left: 1rem;
+        max-height: 0;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        margin-right: 0.4rem;
+        padding-right: 1rem;
+    }
+
+    .sub-menu .sub-menu {
+        border: none;
+        overflow: hidden;
+        margin-right: 0.4rem;
+    }
+
+    .sub-menu::before {
+        display: none;
+    }
+
+    .nav-list li:hover > .sub-menu {
+        opacity: 1;
+        visibility: visible;
+        max-height: initial;
+    }
+
+    li.move-right {
+        margin: 0 auto 0 0;
+        line-height: initial;
+    }
+
+    .menu-icons {
+        display: block;
+    }
+
+    .fa-times {
+        display: none;
+    }
+
+    nav.active .fa-times {
+        display: block;
+    }
+
+    nav.active .fa-bars {
+        display: none;
+    }
+    
+    nav.active .nav-list {
+        display: flex;
+    }
+
+    /* hero section */
+    .hero-content{
+        bottom: 7%;
+        padding: 0 10px; 
+    }
+
+    .hero-content p{
+        font-size: 0px;
+    }
+
+    .hero-content h1{
+        font-size: var(--normal-font-size);
+    }
+
+    /* global community */
+    
+    .global-community {
+        flex-direction: column;
+        width: 90%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+
+    .global-community-img {
+        justify-content: center;
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .global-community-img img {
+        width: 100%;
+        max-width: 300px; 
+        height: auto;
+    }
+
+    .global-community-content {
+        width: 100%;
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .global-community-content h1 {
+        font-size: 36px;
+        padding-bottom: 24px;
+    }
+
+    .global-community-content span {
+        font-size: 36px;
+    }
+
+
+    .global-community-icon {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .global-community-icon img {
+        padding-right: 10px;
+        max-width: 40px; 
+    }
+
+    /* Student testimonial */
+
+    .student-testimonial h2 {
+        font-size: 36px; 
+        margin-bottom: 20px; 
+    }
+
+    .student-testimonial span {
+        font-size: 36px;
+    }
+
+    .wrapper {
+        max-width: 100%; 
+        width: 100%;
+        height: auto; 
+        padding-top: 40px; 
+        padding-bottom: 80px;
+        position: relative; 
+    }
+
+    .testimonial-container {
+        padding-left: 20px; 
+        padding-right: 20px; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;
+        gap: 20px;
+        text-align: center; 
+    }
+
+    .testimonial-image img {
+        width: 100%; 
+        max-width: 250px; 
+        border-radius: 15px;
+        object-fit: cover;
+    }
+
+    .testimonial-text {
+        font-size: 18px; 
+        line-height: 140%;
+        color: var(--black-color);
+        padding-left: 0; 
+        text-align: center;
+        margin-left: -20px;
+    }
+
+    .quotation-mark1, .quotation-mark2 {
+        display: none;
+    }
+
+    .testimonial-content h3 {
+        font-size: 20px; 
+        color: var(--black-color);
+        margin: 40px 0px 40px -80px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .testimonial-content h6 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .wrapper button {
+        width: 50px; 
+        height: 50px;
+        font-size: 18px;
+        position: absolute; 
+        bottom: 20px;
+    }
+
+    button#prev {
+        left: 110px; 
+    }
+
+    button#next {
+        right: 110px;
+    }
+
+    /* See and hear from our student */
+
+    .video-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .section-title {
+        font-size: 34px;
+    }
+    
+    .section-title span {
+        font-size: 34px;
+    }
+
+    /*student-testimonial-cta*/
+    .student-testimonial-cta-card{
+        flex-direction: column-reverse;
+    }
+
+    .cta-content{
+        width: 90%;
+    }
+    
+
+    /* footer */
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        gap: 30px;
+    }
+
+    footer .container img {
+        width: 40%; 
+        max-width: 120px;
+    }
+
+    footer .footer-content {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    footer .footer-content h3 {
+        font-size: var(--normal-font-size);
+        text-align: center;
+    }
+
+    footer .footer-content p {
+        align-self: center;
+        font-size: calc(var(--small-font-size) + 2px);
+        max-width: 90%;
+    }
+
+    footer .footer-content ul {
+        padding-left: 0;
+    }
+
+    footer .footer-content .list li {
+        padding: 5px;
+        text-align: center;
+    }
+
+    footer .footer-content .list li::before {
+        width: 50px;
+    }
+
+    footer .footer-content .social-icons {
+        padding-top: 10px;
+    }
+
+    footer .bottom-bar {
+        margin-top: 30px;
+        padding: 10px;
+    }
+
+    footer .bottom-bar p {
+        font-size: calc(var(--small-font-size) + 2px);
+    }
+}
